@@ -15,7 +15,7 @@ id BIGINT AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
     poder_ataque INT NOT NULL,
     poder_defesa INT NOT NULL,
-    honra INT NOT NULL, -- Representa o nível de lealdade e respeito do xogum
+    honra INT NOT NULL, 
     idade INT NOT NULL,
     posto VARCHAR(50),
     classe_id BIGINT,
@@ -32,9 +32,15 @@ INSERT INTO tb_classes (nome, especialidade, armamento_principal, posto) VALUES
 
 
 INSERT INTO tb_personagens (nome, poder_ataque, poder_defesa, honra, idade, posto, classe_id) VALUES
-('Takamatsu', 3000, 2500, 100, 50, 'Xogum Supremo', 1), -- Xogum
-('Ryu', 2300, 1800, 90, 35, 'Samurai', 2), -- Samurai
-('Kenzo', 2000, 1500, 80, 28, 'Ninja Elite', 3), -- Ninja
-('Hiroshi', 2200, 1200, 85, 40, 'Mago', 4), -- Mago
-('Jiro', 1800, 1400, 70, 30, 'Ronin', 5); -- Ronin
+('Takamatsu', 3000, 2500, 100, 50, 'Xogum Supremo', 1), 
+('Ryu', 2300, 1800, 90, 35, 'Samurai', 2), 
+('Kenzo', 2000, 1500, 80, 28, 'Ninja Elite', 3), 
+('Hiroshi', 2200, 1200, 85, 40, 'Mago', 4), 
+('Jiro', 1800, 1400, 70, 30, 'Ronin', 5); 
+
+SELECT * FROM tb_personagens WHERE poder_ataque >2000;
+
+
+
+
 
