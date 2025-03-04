@@ -39,6 +39,10 @@ INSERT INTO tb_personagens (nome, poder_ataque, poder_defesa, honra, idade, post
 ('Jiro', 1800, 1400, 70, 30, 'Ronin', 5); 
 
 SELECT * FROM tb_personagens WHERE poder_ataque >2000;
+SELECT *FROM  tb_personagens WHERE poder_defesa BETWEEN 1000 AND 2000;
+SELECT *FROM tb_personagens WHERE nome LIKE "%C%";
+
+
 
 
 
